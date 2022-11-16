@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(170, 155, 70);
+}
+
+header {
+    background-color: rgb(109, 99, 44);
+    font-size: 5ch;
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+section {
+    margin-top: 10px;
+   
+}
+
+#lista {
+    font-size: 22px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
