@@ -2,39 +2,42 @@ let header = document.getElementById("header");
 let mitten = document.getElementById("mitten");
 let footer = document.getElementById("footer");
 let container = document.getElementById("container");
+let addATask = document.getElementById("addATask");
+let tHead = document.getElementById("tHead");
+const form = document.getElementById("form");
+const tbody = document.getElementById("tbody");
+let tabell = document.getElementById("tabell");
+
+
 
 
 header.innerHTML="To do list";
 
-let grejer = [
-    {grejId: 1, name: "äta"},
-    {grejId: 2, name: "sova"},
-    {grejId: 3, name: "städa"},
-];
-
-function printGrejer() {
-    container.innerHTML = "";
-    let grejLista = document.createElement("div");
-    grejLista.setAttribute("id", "lista");
-    grejer.map(grej => {
-
-        grejLista.insertAdjacentHTML("afterbegin", "<li>" +grej.name +"</li>")
-        })
-
-    container.appendChild(grejLista);
+class doneButton {                  ////////////CLASS FÖR DONE!-BUTTON
+    constructor() {
+        this.value= "Done!";
+        this.addEventListener("click", console.log("Klick på Done!"))
+    }
 }
 
-printGrejer();
+function onAddATask(e) {
+    e.preventDefault();             ////SKAPA NY RAD OCH LÄGG IN INPUTET
+    let nyttTask = form.value;
+    let nyRad = document.createElement("tr");
+    tHead.appendChild(nyRad);
+    nyRad.innerHTML=nyttTask;
 
-// function please () {
-//     let more.document.getElementById("more");
-//     for let i = 0; i<Never.length; i++) {
-//         let butt=document.createelement("button");
-//         butt.innerHTML=never[i];
-//         more.appendChild(butt);
-//     }
-// }
+    let nyCell = document.createElement("td");  ////SKAPAR EN NY BUTTON BREDVID DET TILLAGDA INPUTET
+    nyRad.appendChild(nyCell);
+    nyCell.innerHTML= "<button>Done!</button>";
 
-please();
+
+}
+
+addATask.addEventListener("click", onAddATask);
+
+
+
+
 
 
