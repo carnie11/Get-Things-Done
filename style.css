@@ -16,62 +16,26 @@ header {
 
 section {
     margin-top: 10px;
-   
 }
-
-
-
 
 
 #lista {
     
     font-size: 22px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-
 }
 
 .tabellRubrik{
     font-size: 24px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration-line: underline;
-
 }
 
 
 
 
-/*.wrapper {  //For grid created in css
-    display: grid;
-    grid-template-columns: 20% 80% ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    justify-content: space-evenly;
-    outline: 1px solid #000;
-    height: 200px;
-    width: 200px;
-    gap: 1rem;
 
-}
-
-/*#wrapper { //For grid created in javascript
-    position: relative;
-    top: 30px;
-    outline: 2px solid #000;
-    font-size: 0;
-    margin: auto;
-    height: 960px;
-    width: 960px;
-    padding: 0;
-    border: none;
-}
-
-
-.grid {  //For grid created in javascript
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: 1px solid #000;
-    display: inline-block;
-}
+ 
 
 
 
