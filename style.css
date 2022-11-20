@@ -32,7 +32,17 @@ section {
 }
 
 
+.doneButton{
+    color: white;
+    font-weight: 500;
+    height: 25px;
+    width: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: white;
+    background-image: url(check-mark-vector-icon.jpg);
+    
 
+}
 
 
  

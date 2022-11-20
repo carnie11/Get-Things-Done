@@ -40,13 +40,28 @@ for (let i=0; i < taskList.length; i++) {       //LOOP FÖR ATT FÅ ARRAYEN IN P
     let row = tabell.insertRow(-1);
     let firstNameCell = row.insertCell(-1);
     firstNameCell.appendChild(document.createTextNode(taskList[i]));
-    firstNameCell.insertAdjacentHTML("afterend",  "<button>Done!</button>");
+    firstNameCell.insertAdjacentHTML("afterend",  "<button id='btn1' class='doneButton'></button>");
     
 }
 
+// //////////////LOCAL STORAGE///////////////
+// if (localStorage.getItem("nyttTask")) {
+//     console.log("Det finns LS");}else {
+//         console.log("Det finns inget LS");
+
+//         let taskList = ["Äta", "Sova", "Städa", ];
+//         localStorage.setItem("nyttTask", JSONstringify(nyttTask));
+//         console.log(localStorage);
+//     }
+
+
+
+
+
+
 
 function onAddATask(e) {                         //FUNKTION FÖR DET SOM SKA HÄNDA NÄR MAN LÄGGER TILL TASKS PÅ LISTAN        
-    e.preventDefault();             
+    e.preventDefault(); 
     let nyttTask = form.value;
     let nyRad = document.createElement("tr");   //SKAPAR NY RAD OCH LÄGGER IN INPUTET + 
     tHead.appendChild(nyRad);
@@ -56,7 +71,11 @@ function onAddATask(e) {                         //FUNKTION FÖR DET SOM SKA HÄ
 
     let nyCell = document.createElement("td");  //SKAPAR EN NY DONE!-BUTTON BREDVID DET TILLAGDA INPUTET
     nyRad.appendChild(nyCell);
-    nyCell.innerHTML= "<button>Done!</button>";
+    nyCell.innerHTML= "<button id='id=taskList.length +1' class='doneButton'></button>";
+    
+   // let newBtn = nyCell.innerHTML= "<button>Done!</button>";
+    //newBtn.style.border = "1px solid black";
+
 }
 
 
